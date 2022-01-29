@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body bgcolor="teal">
+<br>
+<h1 align="center">Welcome {{name}} !</h1>
+<form action="/booking" method="post">
+<h1 align="right"><input type="submit" value="bookings"></h1>
+</form>
+<h2>travel mode:</h2>
+
+<select onchange="la(this.value)">
+   <option disabled selected>BY</option>
+   <option>Bus</option>
+   <option>Train</option>
+   <option>Flight</option> 
+</select>
+
+
+ 
+<script>
+function la (src)
+{
+   window.location=src;
+}
+
+</script>
+
+   </body>
+</html>
